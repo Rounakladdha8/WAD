@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Form</title>
+    
+</head>
+<body>
+    <body style="background-color:powderblue;">
+   <form action="display.html" method="POST">
+       <label for="name">Name</label>
+       <input type="text" placeholder="Entername" id="name">
+       <br><br>
+       <label for="roll">Rollno</label>
+       <input type="number" name="roll" id="roll" placeholder="Enter Rollno">
+       <br><br>
+       <label for="email">Email</label>
+       <input type="email" name="email" id="email" placeholder="Email">
+       <br><br>
+       <label for="phone no">Phone No</label>
+       <input type="phone" name="phone" id="phone" placeholder="Ent">
+       <br><br>
+       <button onclick="submitt()">Submit</button>
+       <button onclick="clearr()">Clear</button>
+
+   </form>
+
+   <script>
+         function submitt(){
+             const name = document.getElementById("name").value;
+             const roll = document.getElementById("roll").value;
+             const email = document.getElementById("email").value;
+
+             localStorage.setItem("Name",name);
+             localStorage.setItem("Rollno",roll);
+             localStorage.setItem("Email",email);
+
+             return;
+         }
+         function clearr(){
+            localStorage.clear()
+
+
+
+
+         }
+
+   </script>
+</body>
+</html

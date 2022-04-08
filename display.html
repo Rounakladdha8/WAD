@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Form </Form></title>
+    <link rel="stylesheet" href="C:\Users\ADMIN\OneDrive\Desktop\Untitled-2.html">
+</head>
+<body>
+    <h1>Display PAge</h1>
+
+    <h2>
+        Name: <span id="display-name"></span>
+    </h2>
+    <h2>
+        roll: <span id="display-roll"></span>
+    </h2>
+    <h2>
+        email: <span id="display-email"></span>
+    </h2>
+    <h2>
+        phone no: <span id="display-phone no"></span>
+    </h2>
+    <br>
+    <a href="index.html">Redirect to previous page</a>
+
+    <script>
+        window.addEventListener("load",()=> {
+            const name= localStorage.getItem("Name");
+            // const roll= localStorage.getItem("Rollno");
+            const email= localStorage.getItem("Email");
+
+            document.getElementById("display-name").innerHTML = name;
+            // document.getElementById("display-roll").innerHTML = roll;
+            document.getElementById("display-email").innerHTML = email;
+        })
+    </script>
+    
+</body>
+</html>
